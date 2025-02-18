@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int max( int a ,int b)
+{
+if(a>b)
+ return a;
+else 
+
+return b;
+}
+
+int main()
+{
+int z;
+z= max(5,3);
+cout<<"the results is "<<z;
+return 0;
+
+}
