@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>  // For string class
+
+using namespace std;
+
+class Person {
+private:
+    string name;
+    int age;
+    string gender;
+    string address;
+    string phoneNumber;
+
+public:
+    // Constructor to initialize the Person object
+    Person(string n, int a, string g, string addr, string phone) {
+        name = n;
+        age = a;
+        gender = g;
+        address = addr;
+        phoneNumber = phone;
+    }
+
+    // Member functions to display the information of the person
+    void displayInfo() {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Gender: " << gender << endl;
+        cout << "Address: " << address << endl;
+        cout << "Phone Number: " << phoneNumber << endl;
+    }
+};
+
+int main() {
+    // Create a Person object with 5 attributes
+    Person person1("John Doe", 30, "Male", "1234 Elm Street", "123-456-7890");
+
+    // Display the person's information
+    person1.displayInfo();
+
+    return 0;
+}
