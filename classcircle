@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>  // For M_PI constant
+
+using namespace std;
+
+class Circle {
+private:
+    double radius;  // Private data member for radius
+
+public:
+    // Constructor to initialize the radius to 10
+    Circle() {
+        radius = 10;
+    }
+
+    // Function to calculate the area of the circle
+    double calculateArea() const {
+        return M_PI * radius * radius;
+    }
+
+    // Function to get the radius
+    double getRadius() const {
+        return radius;
+    }
+};
+
+int main() {
+    // Create a Circle object with default radius of 10
+    Circle myCircle;
+
+    // Display the radius and calculate the area
+    cout << "Radius of the circle: " << myCircle.getRadius() << endl;
+    cout << "The area of the circle is: " << myCircle.calculateArea() << endl;
+
+    return 0;
+}
+
